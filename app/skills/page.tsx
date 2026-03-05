@@ -9,7 +9,6 @@ import {
   SiPandas,
   SiScikitlearn,
   SiTensorflow,
-  SiMetasploit,
   SiPytorch,
   SiJavascript,
   SiTypescript,
@@ -34,11 +33,16 @@ import {
   SiExpress,
   SiBootstrap,
   SiPlotly,
-  SiC,
   SiHtml5,
   SiCss3,
   SiLeetcode,
   SiGooglecolab,
+  SiPrisma,
+  SiWebrtc,
+  SiSocketdotio,
+  SiFastapi,
+  SiGithubactions,
+  SiPostgresql,
 } from "react-icons/si";
 
 /* ── Data ───────────────────────────────────────────────────────── */
@@ -48,13 +52,15 @@ const categories = [
     title: "AI & Machine Learning",
     description: "Data-driven systems built for real-world performance.",
     skills: [
-      { name: "Python", icon: SiPython },
-      { name: "NumPy", icon: SiNumpy },
-      { name: "Pandas", icon: SiPandas },
-      { name: "Scikit-learn", icon: SiScikitlearn },
-      { name: "TensorFlow", icon: SiTensorflow },
-      { name: "PyTorch", icon: SiPytorch },
-      { name: "Matplotlib", icon: SiPlotly },
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "NumPy", icon: SiNumpy, color: "#013243" },
+      { name: "Pandas", icon: SiPandas, color: "#150458" },
+      { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+      { name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
+      { name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
+      { name: "Matplotlib", icon: SiPlotly, color: "#3F4F75" },
+      { name: "Plotly", icon: SiPlotly, color: "#3F4F75" },
+      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
     ],
   },
   {
@@ -62,19 +68,23 @@ const categories = [
     title: "Web Development",
     description: "Full-stack interfaces that are fast, clean, and scalable.",
     skills: [
-      { name: "JavaScript", icon: SiJavascript },
-      { name: "TypeScript", icon: SiTypescript },
-      { name: "React", icon: SiReact },
-      { name: "Next.js", icon: SiNextdotjs },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "Node.js", icon: SiNodedotjs },
-      { name: "Express", icon: SiExpress },
-      { name: "MongoDB", icon: SiMongodb },
-      { name: "MySQL", icon: SiMysql },
-      { name: "Bootstrap", icon: SiBootstrap },
-      { name: "Redis", icon: SiRedis },
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: SiCss3 },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+      { name: "Express", icon: SiExpress, color: "#000000" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+      { name: "Redis", icon: SiRedis, color: "#DC382D" },
+      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+      { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
+      { name: "WebRTC", icon: SiWebrtc, color: "#000000" },
+      { name: "Socket.IO", icon: SiSocketdotio, color: "#010101" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
     ],
   },
   {
@@ -82,12 +92,13 @@ const categories = [
     title: "Tools & DevOps",
     description: "Engineering workflows built for production environments.",
     skills: [
-      { name: "Git", icon: SiGit },
-      { name: "GitHub", icon: SiGithub },
-      { name: "Docker", icon: SiDocker },
-      { name: "Kubernetes", icon: SiKubernetes },
-      { name: "AWS", icon: SiAmazonwebservices },
-      { name: "Postman", icon: SiPostman },
+      { name: "Git", icon: SiGit, color: "#F05032" },
+      { name: "GitHub", icon: SiGithub, color: "#181717" },
+      { name: "Docker", icon: SiDocker, color: "#2496ED" },
+      { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
+      { name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },
+      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+      { name: "GitHub Actions", icon: SiGithubactions, color: "#181717" },
     ],
   },
   {
@@ -95,14 +106,14 @@ const categories = [
     title: "Platforms & Cloud",
     description: "Deployment pipelines and managed cloud infrastructure.",
     skills: [
-      { name: "Vercel", icon: SiVercel },
-      { name: "Netlify", icon: SiNetlify },
-      { name: "Firebase", icon: SiFirebase },
-      { name: "MongoDB Atlas", icon: SiMongodb },
-      { name: "Kaggle", icon: SiKaggle },
-      { name: "Jupyter", icon: SiJupyter },
-      { name: "LeetCode", icon: SiLeetcode },
-      { name: "Google Colab", icon: SiGooglecolab },
+      { name: "Vercel", icon: SiVercel, color: "#000000" },
+      { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "MongoDB Atlas", icon: SiMongodb, color: "#47A248" },
+      { name: "Kaggle", icon: SiKaggle, color: "#20BEFF" },
+      { name: "Jupyter", icon: SiJupyter, color: "#F37626" },
+      { name: "LeetCode", icon: SiLeetcode, color: "#FFA116" },
+      { name: "Google Colab", icon: SiGooglecolab, color: "#F9AB00" },
     ],
   },
 ];
@@ -141,7 +152,6 @@ export default function SkillsPage() {
   const heroRef = useRef(null);
   const heroInView = useInView(heroRef, { once: true });
 
-  /* ── Theme tokens ── */
   const bg = dark ? "bg-[#080808]" : "bg-[#f5f5f5]";
   const text = dark ? "text-white" : "text-black";
   const muted = dark ? "text-neutral-400" : "text-neutral-500";
@@ -243,7 +253,6 @@ function SkillCategory({
 
   return (
     <div ref={ref}>
-      {/* Header */}
       <div
         className={`flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-10 pb-5 border-b ${divider} transition-colors duration-500`}
       >
@@ -288,7 +297,6 @@ function SkillCategory({
         </motion.span>
       </div>
 
-      {/* Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
         {category.skills.map((skill, i) => (
           <SkillCard
@@ -311,12 +319,20 @@ function SkillCard({
   inView,
   dark,
 }: {
-  skill: { name: string; icon: any };
+  skill: { name: string; icon: any; color: string };
   i: number;
   inView: boolean;
   dark: boolean;
 }) {
   const Icon = skill.icon;
+
+  // For very dark brand colors (black icons) we lighten them in dark mode so they stay visible
+  const isDarkColor =
+    skill.color === "#000000" ||
+    skill.color === "#181717" ||
+    skill.color === "#150458" ||
+    skill.color === "#013243";
+  const iconColor = dark && isDarkColor ? "#e5e5e5" : skill.color;
 
   const border = dark ? "border-white/[0.08]" : "border-black/[0.08]";
   const cardBg = dark ? "bg-white/[0.03]" : "bg-black/[0.03]";
@@ -326,9 +342,6 @@ function SkillCard({
   const hoverGlow = dark
     ? "bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.04)_0%,transparent_70%)]"
     : "bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.04)_0%,transparent_70%)]";
-  const iconClr = dark
-    ? "text-white/70 group-hover:text-white"
-    : "text-black/50 group-hover:text-black";
   const labelClr = dark
     ? "text-neutral-400 group-hover:text-neutral-200"
     : "text-neutral-500 group-hover:text-neutral-700";
@@ -347,7 +360,13 @@ function SkillCard({
       <div
         className={`pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${hoverGlow}`}
       />
-      <Icon className={`text-3xl transition-colors duration-300 ${iconClr}`} />
+
+      {/* Icon rendered with its official brand color */}
+      <Icon
+        style={{ color: iconColor, fontSize: "1.875rem" /* text-3xl */ }}
+        className="transition-transform duration-300 group-hover:scale-110"
+      />
+
       <span
         className={`text-xs font-medium text-center transition-colors duration-300 ${labelClr}`}
       >
