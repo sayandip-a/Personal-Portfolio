@@ -1,93 +1,62 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Sayandip Paul – Personal Portfolio
 
-## Getting Started
+🌐 Live Website: https://sayandip-portfolio.vercel.app/
 
-First, run the development server:
+📂 Repository: https://github.com/sayandip-a/Personal-Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Personal-Portfolio
-A modern, responsive personal portfolio website built to showcase my projects, skills, and technical expertise as a Full Stack Developer.
-
+A modern, responsive personal portfolio website built using Next.js and Tailwind CSS to showcase my projects, skills, and technical expertise as a Full Stack Developer.
 
 📌 About The Project
 
 This portfolio is designed to:
 
-Showcase my technical projects
+Showcase real-world full stack projects
 
-Highlight my tech stack and skills
+Highlight my technical skills and stack
 
-Provide recruiters a quick overview of my capabilities
+Provide recruiters with a structured overview
 
-Maintain a clean and scalable frontend architecture
+Demonstrate clean architecture and scalable design
 
-The goal was to build a fast, responsive, and production-ready portfolio using modern web technologies.
+The focus was on performance, responsiveness, and production-ready standards.
 
 🛠️ Tech Stack
 Frontend
 
-Next.js
-
+Next.js (App Router)
 
 Tailwind CSS
 
-JavaScript (ES6+)
+TypeScript / JavaScript
 
 Deployment
 
-GitHub
+Vercel
 
-Vercel / GitHub Pages (mention what you used)
+Custom Domain Integration
 
 ✨ Features
 
 Fully responsive design
 
-Modern UI/UX
+Clean and minimal UI
 
-Project showcase section
-
-Contact section
+Dark/Light theme (if implemented)
 
 Optimized performance
 
 SEO friendly
 
+Fast loading speed
+
+Project showcase section
+
+Contact section
+
 📂 Folder Structure
 portfolio/
 │
-├── app/ or pages/
+├── app/
 ├── components/
 ├── public/
 ├── styles/
@@ -95,13 +64,13 @@ portfolio/
 └── README.md
 🚀 Getting Started (Run Locally)
 
-Clone the project:
+Clone the repository:
 
-git clone https://github.com/sayandip-a/portfolio.git
+git clone https://github.com/sayandip-a/Personal-Portfolio.git
 
-Go to project directory:
+Navigate to project directory:
 
-cd portfolio
+cd Personal-Portfolio
 
 Install dependencies:
 
@@ -110,4 +79,20 @@ npm install
 Run development server:
 
 npm run dev
->>>>>>> 243fee11b63e2bfc1d892f7be7c7df998e8b6997
+📬 Contact
+
+If you'd like to collaborate or discuss opportunities:
+
+🌐 Website: https://sayandip-portfolio.vercel.app/
+
+💼 LinkedIn: www.linkedin.com/in/sayandippaul
+
+📧 Email: sayandip.web@gmail.com
+
+📈 Future Improvements
+
+Add achievements section
+
+Add animations enhancement
+
+Improve accessibility

@@ -24,8 +24,8 @@ const projects = [
       "A modern portfolio built with Next.js, Tailwind CSS, and Framer Motion, focused on clean UI, performance, and smooth user experience.",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     type: "Web Development",
-    live: "#",
-    github: "#",
+    live: "sayandip-portfolio.vercel.app",
+    github: "https://github.com/sayandip-paul/sayandip-portfolio",
   },
   {
     title: "Task Management Web App",

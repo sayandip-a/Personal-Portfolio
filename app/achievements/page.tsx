@@ -57,11 +57,16 @@ const lors = [
 
 const courses = [
   {
-    title: "Machine Learning Specialization",
-    issuer: "Coursera — Stanford / DeepLearning.AI",
-    date: "Oct 2025",
-    credential: "#",
-    skills: ["Supervised Learning", "Neural Networks", "Decision Trees"],
+    title: "Data for Decision Makers Job Simulation",
+    issuer: "BCG X — The Boston Consulting Group",
+    date: "March 2026",
+    credential: "/BCGX.pdf",
+    skills: [
+      "Excel",
+      "Data Analysis",
+      "Data-Driven Decision Making",
+      "PowerPoint",
+    ],
   },
   {
     title: "The Web Developer Bootcamp",
@@ -78,11 +83,17 @@ const courses = [
     skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-learn"],
   },
   {
-    title: "Next.js & React — The Complete Guide",
-    issuer: "Udemy — Maximilian Schwarzmüller",
-    date: "Feb 2025",
-    credential: "#",
-    skills: ["Next.js", "React", "TypeScript", "Server Actions"],
+    title: "EY Technology Risk Virtual Job Simulation",
+    issuer: "Ernst & Young (EY)",
+    date: "March 2026",
+    credential: "/EY.pdf",
+    skills: [
+      "Risk Assessment",
+      "Risk Management",
+      "Problem Solving",
+      "Critical Thinking",
+      "Communication",
+    ],
   },
 ];
 
