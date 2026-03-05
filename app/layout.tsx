@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const SITE_URL = "https://yourdomain.com"; // ← change after deploy
 
@@ -124,6 +125,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
