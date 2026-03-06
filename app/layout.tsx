@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
+import { Analytics } from "@vercel/analytics/next";
 const SITE_URL = "https://yourdomain.com"; // ← change after deploy
 
 export const metadata: Metadata = {
@@ -126,6 +126,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <SpeedInsights />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
